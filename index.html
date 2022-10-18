@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="./images/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>Nails Pro</title>
+</head>
+
+<body>
+    <div class="mainSection">
+        <header>
+            <img src="images/logo.png" alt="logo" id="logo">
+            <div class="menu">
+                <a href="#taglineSection">About</a>
+                <a href="#colorPick">Color pick</a>
+                <a href="#advices">Advices</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contactUs" id="lastItem">Contact us</a>
+            </div>
+            <p id="dateTime">Time</p>
+            <script src="./script.js"></script>
+        </header>
+        <img src="images/mainHand.png" alt="Nails demonstration" id="mainHand">
+        <div class="tagLine">
+            <a name="taglineSection"></a>
+            <p>Here</p>
+            <p style="width: 394px; left: 90px; top: 73px;">you can make</p>
+            <p style="width: 300px; left: 180px; top: 146px;">wonderful</p>
+            <p style="width: 137px; left: 270px; top: 219px;">nails</p>
+        </div>
+        <a href="#footer"><button id="sendRequest">Send request</button></a>
+    </div>
+    <div class="colorPickSection">
+        <a name="colorPick"></a>
+        <p>Choose your color</p>
+        <div class="palette">
+            <button style="background-color: #482C2C;" onclick="changeColor(this)"></button>
+            <button style="background-color: #633F3F;" onclick="changeColor(this)"></button>
+            <button style="background-color: #835252;" onclick="changeColor(this)"></button>
+            <button style="background-color: #B87575;" onclick="changeColor(this)"></button>
+            <button style="background-color: #E59595;" onclick="changeColor(this)"></button>
+            <button style="background-color: #561212;" onclick="changeColor(this)"></button>
+            <button style="background-color: #771919;" onclick="changeColor(this)"></button>
+            <button style="background-color: #9B2828;" onclick="changeColor(this)"></button>
+            <button style="background-color: #CB2828;" onclick="changeColor(this)"></button>
+            <button style="background-color: #FF3333;" onclick="changeColor(this)"></button>
+            <button style="background-color: #522E14;" onclick="changeColor(this)"></button>
+            <button style="background-color: #81481F;" onclick="changeColor(this)"></button>
+            <button style="background-color: #A65D28;" onclick="changeColor(this)"></button>
+            <button style="background-color: #D17431;" onclick="changeColor(this)"></button>
+            <button style="background-color: #FF8832;" onclick="changeColor(this)"></button>
+            <button style="background-color: #632D06;" onclick="changeColor(this)"></button>
+            <button style="background-color: #8D4109;" onclick="changeColor(this)"></button>
+            <button style="background-color: #B95710;" onclick="changeColor(this)"></button>
+            <button style="background-color: #DE6812;" onclick="changeColor(this)"></button>
+            <button style="background-color: #FF740F;" onclick="changeColor(this)"></button>
+            <button style="background-color: #424431;" onclick="changeColor(this)"></button>
+            <button style="background-color: #63664A;" onclick="changeColor(this)"></button>
+            <button style="background-color: #838763;" onclick="changeColor(this)"></button>
+            <button style="background-color: #9A9E72;" onclick="changeColor(this)"></button>
+            <button style="background-color: #D4DA9F;" onclick="changeColor(this)"></button>
+            <button style="background-color: #464928;" onclick="changeColor(this)"></button>
+            <button style="background-color: #5F6338;" onclick="changeColor(this)"></button>
+            <button style="background-color: #8F9553;" onclick="changeColor(this)"></button>
+            <button style="background-color: #ABB263;" onclick="changeColor(this)"></button>
+            <button style="background-color: #C9D172;" onclick="changeColor(this)"></button>
+            <button style="background-color: #284349;" onclick="changeColor(this)"></button>
+            <button style="background-color: #3E6973;" onclick="changeColor(this)"></button>
+            <button style="background-color: #518793;" onclick="changeColor(this)"></button>
+            <button style="background-color: #58AFC2;" onclick="changeColor(this)"></button>
+            <button style="background-color: #77D1E4;" onclick="changeColor(this)"></button>
+            <button style="background-color: #164954;" onclick="changeColor(this)"></button>
+            <button style="background-color: #1F6675;" onclick="changeColor(this)"></button>
+            <button style="background-color: #3492A7;" onclick="changeColor(this)"></button>
+            <button style="background-color: #30B2CE;" onclick="changeColor(this)"></button>
+            <button style="background-color: #21CEF3;" onclick="changeColor(this)"></button>
+            <button style="background-color: #4E234C;" onclick="changeColor(this)"></button>
+            <button style="background-color: #743271;" onclick="changeColor(this)"></button>
+            <button style="background-color: #994395;" onclick="changeColor(this)"></button>
+            <button style="background-color: #B44BAF;" onclick="changeColor(this)"></button>
+            <button style="background-color: #E866E2;" onclick="changeColor(this)"></button>
+            <button style="background-color: #5E1349;" onclick="changeColor(this)"></button>
+            <button style="background-color: #7C1A61;" onclick="changeColor(this)"></button>
+            <button style="background-color: #A11279;" onclick="changeColor(this)"></button>
+            <button style="background-color: #C50A90;" onclick="changeColor(this)"></button>
+            <button style="background-color: #FC00B5;" onclick="changeColor(this)"></button>
+        </div>
+        <img src="images/arrow.png" alt="Arrow" id="leftArrow">
+        <div id="tile"></div>
+        <img src="images/arrow.png" alt="Arrow" id="rightArrow">
+        <div class="nailsBlock">
+            <img src="images/nailsForColor.png" alt="Hand with choosen color" id="nailPhoto">
+            <div id="nail1"></div>
+            <div id="nail2"></div>
+            <div id="nail3"></div>
+        </div>
+    </div>
+    <div class="advices">
+        <a name="advices"></a>
+        <p id="sectionTitle">Some advices</p>
+        <div class="adviceButtons">
+            <div id="backgroundCircle">
+                <p id="adviceText"></p>
+            </div>
+            <button id="firstAdvice" onclick="changeAdvice(this)">
+                <div class="adviceEffects">
+                    <p>One</p>
+                </div>
+            </button>
+            <button id="secondAdvice" onclick="changeAdvice(this)">
+                <div class="adviceEffects">
+                    <p>Four</p>
+                </div>
+            </button>
+            <button id="thirdAdvice" onclick="changeAdvice(this)">
+                <div class="adviceEffects">
+                    <p>Two</p>
+                </div>
+            </button>
+            <button id="fourthAdvice" onclick="changeAdvice(this)">
+                <div class="adviceEffects">
+                    <p>Three</p>
+                </div>
+            </button>
+        </div>
+    </div>
+    <div class="testimonials">
+        <a name="testimonials"></a>
+        <p>Testomonials</p>
+        <div class="cardsArea">
+            <div class="card">
+                <img src="images/testimonialOne.jpg" alt="User photo">
+                <p>Interstellar Actor</p>
+                <p id="info">23 years • Minsk • Belarus</p>
+                <p id="description">I want to say thank you to the wonderful masters.
+                    The hands of the masters are as gentle as possible.
+                    A couple of times I even wanted to fall asleep :)
+                    The color matching function presented on the site
+                    helped a lot, I will recommend it to all my friends.</p>
+            </div>
+            <div class="card">
+                <img src="images/testimonialOne.jpg" alt="User photo">
+                <p>Interstellar Actor</p>
+                <p id="info">23 years • Minsk • Belarus</p>
+                <p id="description">I want to say thank you to the wonderful masters.
+                    The hands of the masters are as gentle as possible.
+                    A couple of times I even wanted to fall asleep :)
+                    The color matching function presented on the site
+                    helped a lot, I will recommend it to all my friends.</p>
+            </div>
+            <div class="card">
+                <img src="images/testimonialOne.jpg" alt="User photo">
+                <p>Interstellar Actor</p>
+                <p id="info">23 years • Minsk • Belarus</p>
+                <p id="description">I want to say thank you to the wonderful masters.
+                    The hands of the masters are as gentle as possible.
+                    A couple of times I even wanted to fall asleep :)
+                    The color matching function presented on the site
+                    helped a lot, I will recommend it to all my friends.</p>
+            </div>
+            <div class="card" style="margin-right: 0px;">
+                <img src="images/testimonialOne.jpg" alt="User photo">
+                <p>Interstellar Actor</p>
+                <p id="info">23 years • Minsk • Belarus</p>
+                <p id="description">I want to say thank you to the wonderful masters.
+                    The hands of the masters are as gentle as possible.
+                    A couple of times I even wanted to fall asleep :)
+                    The color matching function presented on the site
+                    helped a lot, I will recommend it to all my friends.</p>
+            </div>
+        </div>
+        <div>
+            <a href="#backCall"><button id="leaveTestimonial">Leave testimonial</button></a>
+        </div>
+    </div>
+    <div class="footer">
+        <footer>
+            <a name="footer"></a>
+            <div id="social">
+                <p id="titlePTag">Subscribe us</p>
+                <div id="socialLinks">
+                    <a href="https://www.facebook.com/profile.php?id=100008295191525" target="_blank">
+                        <div id="link">
+                            <img src="images/facebookIcon.png" alt="Facebook icon" width="16px" height="16px">
+                            <p>Facebook</p>
+                        </div>
+                    </a>
+                    <a href="https://twitter.com/ArtyWrong" target="_blank">
+                        <div id="link">
+                            <img src="images/twitterIcon.png" alt="Twitter icon" width="16px" height="16px">
+                            <p>Twitter</p>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/farshcup375/" target="_blank">
+                        <div id="link">
+                            <img src="images/instagramIcon.png" alt="Instagram icon" width="16px" height="16px">
+                            <p>Instagram</p>
+                        </div>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UC6ZQdUWntzq8eylpXNjf5eA" target="_blank">
+                        <div id="link">
+                            <img src="images/youtubeIcon.png" alt="Youtube icon" width="16px" height="16px">
+                            <p>Youtube</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="contactUS">
+                <a name="contactUs"></a>
+                <p id="contactUsTitle">Contact us</p>
+                <div class="contactInfo">
+                    <p><a href="mailto:nailspro@gmail.com" id="aTag">nailspro@gmail.com</a></p>
+                    <p><a href="mailto:nailspro@mail.ru" id="aTag">nailspro@mail.ru</a></p>
+                    <p><a href="tel:+375299999999" id="aTag">+375 29 999-99-99</a></p>
+                    <p><a href="tel:+375449999999" id="aTag">+375 44 999-99-99</a></p>
+                </div>
+            </div>
+            <div class="backCall">
+                <a name="backCall"></a>
+                <p id="backCallTitle">Back call</p>
+                <form id="form">
+                    <div class="formFrame">
+                        <input type="text" id="text" form="form" placeholder="Enter your name">
+                        <input type="email" id="email" form="form" placeholder="Enter your email">
+                        <button form="form" type="submit" id="submitMail" onclick="sendEmail()">Send request</button>
+                    </div>
+                </form>
+            </div>
+            <div class="lightLogo">
+                <img src="images/light-logo.png" alt="Light logo">
+            </div>
+            <div class="designer">
+                <a href="https://t.me/wrongdesign" target="_blank"><p id="designed">Designed by WrongDesign</p></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

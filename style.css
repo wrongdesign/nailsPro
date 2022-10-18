@@ -1,0 +1,733 @@
+html::-webkit-scrollbar {
+    width: 0px;
+}
+
+body {
+    position: relative;
+    width: 1600px;
+    height: 3397px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+.mainSection {
+    position: absolute;
+    width: 1600px;
+    height: 780px;
+    left: 0px;
+    top: 0px;
+    background: #FDD2D2;
+}
+
+header {
+    position: absolute;
+    width: 1600px;
+    height: 80px;
+    background-color: #EFC1C1;
+}
+
+#logo {
+    position: absolute;
+    width: 256px;
+    height: 80px;
+    left: 58px;
+    top: 0px;
+}
+
+.menu {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 595px;
+    left: 562px;
+    height: 22px;
+    padding-top: 29px;
+}
+
+p {
+    font-family: 'Fredoka One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    height: 22px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Fredoka One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    height: 22px;
+    color: black;
+}
+
+.menu>a {
+    margin: 0px;
+    padding-right: 45px;
+}
+
+.menu>a:hover {
+    color: #884343;
+}
+
+#lastItem {
+    padding-right: 0px;
+}
+
+#dateTime {
+    position: absolute;
+    width: 137px;
+    height: 22px;
+    left: 1405px;
+    padding-top: 29px;
+    margin: 0px;
+}
+
+#mainHand {
+    position: absolute;
+    width: 1097.75px;
+    height: 680px;
+    left: 0px;
+    top: 80px;
+}
+
+.tagLine {
+    position: absolute;
+    width: 484px;
+    height: 292px;
+    left: 997px;
+    top: 155px;
+}
+
+.tagLine>p {
+    position: absolute;
+    width: 137px;
+    height: 73px;
+    left: 0px;
+    top: 0px;
+    font-size: 60px;
+    margin: 0px;
+}
+
+#sendRequest {
+    position: absolute;
+    width: 298px;
+    height: 54px;
+    left: 1180px;
+    top: 537px;
+    background: #884343;
+    color: white;
+    border-radius: 25px;
+    border: 0px;
+    margin: 0px;
+    font-family: 'Fredoka One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+#sendRequest:hover {
+    background: #633333;
+}
+
+.colorPickSection {
+    position: absolute;
+    width: 1600px;
+    height: 600px;
+    left: 0px;
+    top: 780px;
+    background-color: white;
+}
+
+.colorPickSection>p {
+    position: absolute;
+    width: 530px;
+    height: 73px;
+    left: 623px;
+    top: 50px;
+    font-family: 'Fredoka One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 73px;
+    margin: 0px;
+}
+
+.palette {
+    position: absolute;
+    display: grid;
+    width: 400px;
+    height: 340px;
+    left: 190px;
+    top: 156px;
+    grid-template-columns: repeat(5, 80px);
+    grid-template-rows: repeat(10, 34px);
+    grid-gap: 0px 0px;
+}
+
+.palette>button {
+    border: 0px;
+}
+
+.palette>button:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.palette>button:active {
+    filter: blur(4px);
+}
+
+.palette>button:focus {
+    filter: blur(4px);
+}
+
+.nailsBlock {
+    position: absolute;
+    width: 304.44px;
+    height: 340px;
+    left: 1010px;
+    top: 156px;
+}
+
+.nailsBlock>#nailPhoto {
+    position: absolute;
+    width: 304.44px;
+    height: 340px;
+    left: 0px;
+    top: 0px;
+}
+
+.nailsBlock>#nail1 {
+    position: absolute;
+    width: 58px;
+    height: 98px;
+    left: 25px;
+    top: 73px;
+    background-color: #482C2C;
+    border-radius: 14px 14px 24px 24px;
+}
+
+.nailsBlock>#nail2 {
+    position: absolute;
+    width: 70px;
+    height: 118px;
+    left: 124px;
+    top: 10px;
+    background-color: #482C2C;
+    border-radius: 16px 16px 35px 35px;
+}
+
+.nailsBlock>#nail3 {
+    position: absolute;
+    width: 49px;
+    height: 84px;
+    left: 233px;
+    top: 138px;
+    background-color: #482C2C;
+    border-radius: 12px 12px 25px 25px;
+}
+
+#tile {
+    position: absolute;
+    width: 298px;
+    height: 170px;
+    left: 651px;
+    top: 241px;
+    border-radius: 25px;
+    background-color: #482C2C;
+}
+
+#leftArrow {
+    position: absolute;
+    width: 37.5px;
+    left: 601.5px;
+    top: 315px;
+}
+
+#rightArrow {
+    position: absolute;
+    width: 37.5px;
+    left: 961px;
+    top: 315px;
+}
+
+.advices {
+    position: absolute;
+    width: 1600px;
+    height: 1000px;
+    left: 0px;
+    top: 1380px;
+    background: #FDD2D2;
+}
+
+#sectionTitle {
+    position: absolute;
+    width: auto;
+    height: 73px;
+    left: 670px;
+    top: 50px;
+    font-size: 40px;
+    line-height: 73px;
+    margin: 0px;
+}
+
+.adviceButtons {
+    position: absolute;
+    width: 800px;
+    height: 750px;
+    left: 400px;
+    top: 188px;
+}
+
+.adviceButtons>#backgroundCircle {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 150px;
+    top: 125px;
+    background: #ECECEC;
+    border-radius: 250px;
+
+}
+
+.adviceEffects {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    left: 0px;
+    top: 0px;
+    border-radius: 200px;
+    padding: 0px;
+    background-color: rgba(255, 250, 250, 0.7);
+    vertical-align: middle;
+    text-align: center;
+}
+
+.adviceEffects>p {
+    display: inline-block;
+    line-height: 250px;
+    font-size: 30px;
+    margin: 0px;
+}
+
+.adviceEffects:hover {
+    opacity: 0;
+}
+
+.adviceEffects:active {
+    opacity: 0;
+}
+
+.adviceEffects:focus {
+    opacity: 0;
+}
+
+#firstAdvice {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    left: 300px;
+    top: 0px;
+    background-image: url(images/adviceOne.jpg);
+    border-radius: 200px;
+    border: none;
+    padding: 0px;
+}
+
+#secondAdvice {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    left: 0px;
+    top: 250px;
+    background-image: url(images/adviceTwo.jpg);
+    border-radius: 200px;
+    border: none;
+    padding: 0px;
+}
+
+#thirdAdvice {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    left: 600px;
+    top: 250px;
+    background-image: url(images/adviceThree.jpg);
+    border-radius: 200px;
+    border: none;
+    padding: 0px;
+}
+
+#fourthAdvice {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    left: 300px;
+    top: 500px;
+    background-image: url(images/adviceFour.jpg);
+    border-radius: 200px;
+    border: none;
+    padding: 0px;
+}
+
+#backgroundCircle>#adviceText {
+    position: absolute;
+    width: 350px;
+    height: 230px;
+    left: 75px;
+    top: 135px;
+    font-size: 20px;
+    line-height: 24.2px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    margin: 0px;
+}
+
+.testimonials {
+    position: absolute;
+    width: 1600px;
+    height: 650px;
+    left: 0px;
+    top: 2380px;
+}
+
+.testimonials>p {
+    position: absolute;
+    width: 244px;
+    height: 48px;
+    left: 678px;
+    top: 50px;
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0px;
+}
+
+.testimonials>.cardsArea {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    white-space: nowrap;
+    width: 1380px;
+    height: 315px;
+    left: 110px;
+    top: 173px;
+    margin: 0px;
+}
+
+.card {
+    position: relative;
+    width: 330px;
+    height: 315px;
+    border-radius: 80px;
+    background-color: rgb(228, 228, 228);
+}
+
+.card>img {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    left: 44px;
+    top: 26px;
+}
+
+.card>p {
+    position: absolute;
+    width: 161px;
+    height: 24px;
+    left: 101px;
+    top: 26px;
+    margin: 0px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.card>#info {
+    position: absolute;
+    width: 148px;
+    height: 15px;
+    left: 101px;
+    top: 50px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #949494;
+
+}
+
+.card>#description {
+    position: absolute;
+    white-space: normal;
+    width: 280px;
+    height: 200px;
+    left: 30px;
+    top: 75px;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: justify;
+}
+
+#leaveTestimonial {
+    position: absolute;
+    width: 298px;
+    height: 54px;
+    left: 651px;
+    top: 538px;
+    background: #FDD2D2;
+    border-radius: 25px;
+    font-family: 'Fredoka One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    border: none;
+}
+
+#leaveTestimonial:hover {
+    background-color: #DB8484;
+}
+
+#leaveTestimonial:active {
+    background-color: #DB8484;
+}
+
+#leaveTestimonial:focus {
+    background-color: #DB8484;
+}
+
+.footer {
+    position: absolute;
+    width: 1600px;
+    height: 367px;
+    left: 0px;
+    top: 3030px;
+    background: #595959;
+}
+
+#social {
+    position: absolute;
+    width: 181px;
+    height: 154px;
+    left: 78px;
+    top: 30px;
+}
+
+#social>#titlePTag {
+    position: absolute;
+    width: 181px;
+    height: 36.3px;
+    left: 0px;
+    top: 0px;
+    font-size: 30px;
+    line-height: 36.3px;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+#social>#socialLinks {
+    position: absolute;
+    width: 111px;
+    height: 104px;
+    left: 0px;
+    top: 50px;
+}
+
+#link {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 26px;
+    gap: 14px;
+}
+
+#link>p {
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.lightLogo {
+    position: absolute;
+    width: 256px;
+    height: 80px;
+    left: 34px;
+    top: 260px;
+}
+
+.contactUS {
+    position: absolute;
+    width: 231px;
+    height: 196px;
+    left: 684px;
+    top: 30px;
+}
+
+#contactUsTitle {
+    position: absolute;
+    width: 157px;
+    height: 36px;
+    left: 37px;
+    top: 0px;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.contactInfo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 231px;
+    height: 146px;
+    left: 0px;
+    top: 50px;
+    color: #FFFFFF;
+}
+
+#aTag {
+    font-size: 24px;
+    height: 29px;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.contactInfo>p {
+    height: 29px;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0px;
+    color: #FFFFFF;
+}
+
+.backCall {
+    position: absolute;
+    width: 274px;
+    height: 228px;
+    left: 1268px;
+    top: 30px;
+}
+
+#backCallTitle {
+    position: absolute;
+    width: 129px;
+    height: 36px;
+    left: 72px;
+    top: 0px;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+#form {
+    position: absolute;
+    width: 274px;
+    height: 178px;
+    left: 0px;
+    top: 50px;
+}
+
+.formFrame {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 274px;
+    height: 178px;
+    left: 0px;
+    top: 0px;
+}
+
+#text {
+    color: #FFFFFF;
+    font-family: 'Fredoka One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    width: 274px;
+    height: 50px;
+    background: #444343;
+    border-radius: 25px;
+    border: none;
+    text-align: center;
+}
+
+#text::-webkit-input-placeholder {
+    color: #FFFFFF;
+}
+
+#email {
+    color: #FFFFFF;
+    font-family: 'Fredoka One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    width: 274px;
+    height: 50px;
+    background: #444343;
+    border-radius: 25px;
+    border: none;
+    text-align: center;
+}
+
+#email::-webkit-input-placeholder {
+    color: #FFFFFF;
+}
+
+#submitMail {
+    width: 274px;
+    height: 50px;
+    background: #884343;
+    border-radius: 25px;
+    font-family: 'Fredoka One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    border: none;
+}
+
+#submitMail:hover {
+    background: #633333;
+}
+
+#submitMail:active {
+    background: #633333;
+}
+
+#submitMail:focus {
+    background: #633333;
+}
+
+.designer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 161px;
+    height: 80px;
+    left: 1324px;
+    top: 277px;
+}
+
+#designed {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin: 0px;
+}
