@@ -23,15 +23,17 @@
                 <a href="#colorPick">Color pick</a>
                 <a href="#advices">Advices</a>
                 <a href="#testimonials">Testimonials</a>
-                <a href="#contactUs" id="lastItem">Contact us</a>
+                <a href="#contactUs">Contact us</a>
             </div>
             <p id="dateTime">Time</p>
             <script src="script.js"></script>
         </header>
-        <img src="images/mainHand.png" alt="Nails demonstration" id="mainHand">
-        <a name="taglineSection" style="margin: 0px auto;"></a>
-        <img src="images/tagLine.png" alt="Tag text" id="tagLine">
-        <button id="sendRequest" onclick="document.location = '#footer'">Send request</button>
+        <a name="taglineSection" style="width: 1600px; height: 0px; margin: 0px auto;"></a>
+        <div class="mainSlider">
+            <img src="images/mainHand.png" alt="Nails demonstration" id="mainHand">
+            <img src="images/tagLine.png" alt="Tag text" id="tagLine">
+            <button id="sendRequest" onclick="document.location = '#footer'">Send request</button>
+        </div>
     </div>
     <a name="colorPick" style="height: 0px;"></a>
     <div class="colorPickSection">
@@ -133,7 +135,7 @@
     </div>
     <a name="testimonials" style="height: 0px;"></a>
     <div class="testimonials">
-        <p>Testomonials</p>
+        <p>Testimonials</p>
         <div class="cardsArea">
             <div class="card">
                 <img src="images/testimonialOne.jpg" alt="User photo">
@@ -176,9 +178,7 @@
                     helped a lot, I will recommend it to all my friends.</p>
             </div>
         </div>
-        <div>
-            <a href="#backCall"><button id="leaveTestimonial">Leave testimonial</button></a>
-        </div>
+        <button id="leaveTestimonial" onclick="document.location = '#backCall'">Leave testimonial</button>
     </div>
     <a name="footer" style="height: 0px;"></a>
     <a name="contactUs" style="height: 0px;"></a>
@@ -237,7 +237,7 @@
         </div>
         <div class="logoAndDesign">
             <div class="lightLogo">
-                <img src="images/light-logo.png" alt="Light logo">
+                <img src="images/light-logo.png" alt="Light logo" id="light">
             </div>
             <div class="designer">
                 <a href="https://t.me/wrongdesign" target="_blank">
