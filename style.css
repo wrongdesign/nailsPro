@@ -12,6 +12,13 @@ body {
     margin: 0px auto;
 }
 
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+    body {
+        width: 1000px;
+        height: 2788px;
+    }
+}
+
 .mainSection {
     width: 1600px;
     height: 780px;
@@ -21,12 +28,28 @@ body {
     margin: 0px auto;
 }
 
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+    .mainSection {
+        width: 1000px;
+        height: 500px;
+    }
+}
+
 header {
     display: flex;
     flex-wrap: wrap;
     width: 1600px;
     height: 80px;
     background-color: #EFC1C1;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+    header {
+        width: 1000px;
+        height: 80px;
+    }
 }
 
 #logo {
@@ -37,15 +60,22 @@ header {
     margin: 0px auto;
 }
 
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+    #logo {
+        width: 200px;
+        height: 62.5px;
+    }
+}
+
 header>.menu {
     position: inherit;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    gap: 45px;
     width: 595px;
     left: 562px;
     height: 22px;
-    padding-top: 29px;
     margin: 0px auto;
 }
 
@@ -70,22 +100,47 @@ a {
 
 .menu>a {
     margin: 0px;
-    padding-right: 45px;
 }
 
 .menu>a:hover {
     color: #884343;
 }
 
-#lastItem {
-    padding-right: 0px;
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+    header>.menu {
+        width: 409px;
+        height: 19px;
+        gap: 10px;
+    }
+
+    p {
+        font-size: 16px;
+        height: 19px;
+    }
+
+    a {
+        font-size: 16px;
+        height: 19px;
+    }
 }
 
 #dateTime {
     width: 140px;
     height: 22px;
-    left: 1405px;
-    padding-top: 29px;
+    margin: 0px auto;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+    #dateTime {
+        width: 122px;
+        height: 19px;
+    }
+}
+
+.mainSlider {
+    position: inherit;
+    width: 1600px;
+    height: 700px;
     margin: 0px auto;
 }
 
@@ -93,8 +148,6 @@ a {
     position: relative;
     width: 1097.75px;
     height: 680px;
-    left: 0px;
-    top: 0px;
     margin: 0px auto;
 }
 
@@ -102,7 +155,7 @@ a {
     position: relative;
     width: 484px;
     height: 292px;
-    right: 119px;
+    left: -104px;
     bottom: 300px;
     margin: 0px auto;
 }
@@ -113,6 +166,7 @@ a {
     height: 54px;
     left: 1180px;
     bottom: 216px;
+    padding: 0px;
     margin: 0px auto;
     background: #884343;
     color: white;
@@ -126,6 +180,33 @@ a {
 
 #sendRequest:hover {
     background: #633333;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+    .mainSlider {
+        width: 1000px;
+        height: 420px;
+    }
+
+    #mainHand {
+        width: 645px;
+        height: 400px;
+    }
+
+    #tagLine {
+        width: 333px;
+        height: 201px;
+        left: -36px;
+        bottom: 146px;
+    }
+
+    #sendRequest {
+        width: 244px;
+        height: 46px;
+        left: 720px;
+        bottom: 90px;
+        font-size: 18px;
+    }
 }
 
 .colorPickSection {
@@ -142,16 +223,30 @@ a {
     margin: 0px;
 }
 
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+    .colorPickSection {
+        width: 1000px;
+        height: 400px;
+        gap: 40px;
+    }
+}
+
 .colorPickSection>p {
     position: relative;
     width: 353px;
     height: 48px;
     top: 50px;
-    font-family: 'Fredoka One';
-    font-style: normal;
-    font-weight: 400;
     font-size: 40px;
     margin: 0px;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+    .colorPickSection>p {
+        width: 230px;
+        height: 31px;
+        top: 30px;
+        font-size: 26px;
+    }
 }
 
 .colorPickSection>.colorPickFrame {
@@ -177,6 +272,22 @@ a {
     margin-right: 0px;
 }
 
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+    .colorPickSection>.colorPickFrame {
+        width: 924px;
+        height: 300px;
+        padding-right: 16px;
+        gap: 20px;
+    }
+
+    .colorPickFrame>.palette {
+        width: 300px;
+        height: 300px;
+        grid-template-columns: repeat(5, 60px);
+        grid-template-rows: repeat(10, 30px);
+    }
+}
+
 .palette>button {
     border: 0px;
 }
@@ -197,7 +308,7 @@ a {
 
 .colorPickFrame>.nailsBlock {
     position: relative;
-    width: 304.44px;
+    width: 305px;
     height: 340px;
     left: 0px;
     top: 0px;
@@ -210,6 +321,18 @@ a {
     height: 340px;
     left: 0px;
     top: 0px;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+    .colorPickFrame>.nailsBlock {
+        width: 269px;
+        height: 300px;
+    }
+
+    .nailsBlock>#nailPhoto {
+        width: 268.62px;
+        height: 300px;
+    }
 }
 
 .nailsBlock>.nailsColorBlock {
@@ -252,9 +375,39 @@ a {
     border-radius: 12px 12px 25px 25px;
 }
 
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+    .nailsBlock>.nailsColorBlock {
+        width: 228px;
+        height: 189px;
+        left: 21px;
+        top: 7px;
+    }
+
+    .nailsColorBlock>#nail1 {
+        width: 52px;
+        height: 86px;
+        left: 0px;
+        top: 57px;
+    }
+
+    .nailsColorBlock>#nail2 {
+        width: 62px;
+        height: 106px;
+        left: 88px;
+        bottom: 86px;
+    }
+
+    .nailsColorBlock>#nail3 {
+        width: 43px;
+        height: 74px;
+        left: 184px;
+        bottom: 77px;
+    }
+}
+
 .colorPickFrame>#tile {
     position: relative;
-    width: 201px;
+    width: 200px;
     height: 100px;
     border-radius: 25px;
     background-color: #482C2C;
@@ -289,6 +442,20 @@ a {
     top: 50px;
     font-size: 40px;
     margin: 0px auto;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+    .advices {
+        width: 1000px;
+        height: 871px;
+        gap: 60px;
+    }
+
+    #sectionTitle {
+        top: 30px;
+        font-size: 26px;
+        height: 31px;
+    }
 }
 
 .adviceButtons {
@@ -327,6 +494,12 @@ a {
     line-height: 250px;
     font-size: 30px;
     margin: 0px;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+    .adviceEffects>p {
+        font-size: 22px;
+    }
 }
 
 .adviceEffects:hover {
@@ -412,8 +585,6 @@ a {
     gap: 113px;
     width: 1600px;
     height: 650px;
-    left: 0px;
-    top: 2380px;
     margin: 0px auto;
 }
 
@@ -426,6 +597,21 @@ a {
     margin: 0px;
 }
 
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+    .testimonials {
+        width: 1000px;
+        height: 650px;
+        gap: 60px;
+    }
+
+    .testimonials>p {
+        top: 30px;
+        width: 159px;
+        height: 31px;
+        font-size: 26px;
+    }
+}
+
 .testimonials>.cardsArea {
     position: relative;
     display: flex;
@@ -435,6 +621,15 @@ a {
     width: 1380px;
     height: 315px;
     margin: 0px auto;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+    .testimonials>.cardsArea {
+        flex-wrap: wrap;
+        width: 600px;
+        height: 430px;
+        gap: 30px 40px;
+    }
 }
 
 .card {
@@ -489,11 +684,49 @@ a {
     text-align: justify;
 }
 
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+    .card {
+        width: 280px;
+        height: 200px;
+    }
+
+    .card>img {
+        width: 34px;
+        height: 34px;
+        left: 37.33px;
+        top: 16.51px;
+        border-radius: 17px;
+    }
+
+    .card>p {
+        width: 136.61px;
+        height: 15.24px;
+        left: 85.7px;
+        top: 16.51px;
+        font-size: 16px;
+    }
+
+    .card>#info {
+        width: 125.58px;
+        height: 9.52px;
+        left: 85.7px;
+        top: 31.75px;
+        font-size: 10px;
+    }
+
+    .card>#description {
+        width: 238px;
+        height: 107px;
+        left: 21px;
+        top: 58px;
+        font-size: 12px;
+    }
+}
+
 #leaveTestimonial {
     position: relative;
     width: 298px;
     height: 54px;
-    bottom: 50px;
     background: #FDD2D2;
     border-radius: 25px;
     font-family: 'Fredoka One';
@@ -501,7 +734,18 @@ a {
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
+    top: -50px;
     border: none;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+    #leaveTestimonial {
+        width: 244px;
+        height: 46px;
+        font-size: 18px;
+        line-height: 22px;
+        top: -30px;
+    }
 }
 
 #leaveTestimonial:hover {
@@ -548,6 +792,21 @@ a {
     justify-content: flex-start;
     width: 181px;
     height: 154px;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+    .footer {
+        width: 1000px;
+        height: 367px;
+        gap: 76px;
+    }
+
+    .footer>.firstLayout {
+        width: 934px;
+        height: 228px;
+        top: 30px;
+        gap: 179px;
+    }
 }
 
 .social>#titlePTag {
@@ -637,8 +896,8 @@ a {
 
 .backCall {
     position: relative;
-    align-items: flex-end;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     width: 274px;
     height: 228px;
 }
@@ -653,6 +912,20 @@ a {
     line-height: 36px;
     color: #FFFFFF;
     margin: 0px;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+    .backCall {
+        width: 181px;
+        height: 228px;
+    }
+
+    #backCallTitle {
+        width: 129px;
+        height: 36px;
+        left: 26px;
+        top: 0px;
+    }
 }
 
 #form {
@@ -674,6 +947,16 @@ a {
     top: 0px;
 }
 
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+    #form {
+        width: 181px;
+    }
+
+    .formFrame {
+        width: 181px;
+    }
+}
+
 #text {
     color: #FFFFFF;
     font-family: 'Fredoka One';
@@ -687,6 +970,14 @@ a {
     border-radius: 25px;
     border: none;
     text-align: center;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+    #text {
+        width: 181px;
+        font-size: 12px;
+        line-height: 15px;
+    }
 }
 
 #text::-webkit-input-placeholder {
@@ -708,6 +999,14 @@ a {
     text-align: center;
 }
 
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+    #email {
+        width: 181px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
+
 #email::-webkit-input-placeholder {
     color: #FFFFFF;
 }
@@ -724,6 +1023,14 @@ a {
     line-height: 29px;
     color: #FFFFFF;
     border: none;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+    #submitMail {
+        width: 181px;
+        font-size: 14px;
+        line-height: 17px;
+    }
 }
 
 #submitMail:hover {
@@ -769,4 +1076,28 @@ a {
     line-height: 16px;
     color: #FFFFFF;
     margin: 0px;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+    .logoAndDesign {
+        width: 1000px;
+        height: 63px;
+        gap: 689px;
+    }
+
+    .lightLogo {
+        width: 200px;
+        height: 62.5px;
+    }
+
+    #light {
+        width: 200px;
+        height: 62.5px;
+    }
+
+    .designer {
+        width: 161px;
+        height: 63px;
+        align-items: center;
+    }
 }
