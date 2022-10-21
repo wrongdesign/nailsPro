@@ -3,41 +3,42 @@ html::-webkit-scrollbar {
 }
 
 body {
-    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 0px;
     width: 1600px;
     height: 3397px;
-    margin-top: 0px;
-    margin-left: 0px;
-    padding-top: 0px;
-    padding-left: 0px;
+    margin: 0px auto;
 }
 
 .mainSection {
-    position: absolute;
     width: 1600px;
     height: 780px;
     left: 0px;
     top: 0px;
     background: #FDD2D2;
+    margin: 0px auto;
 }
 
 header {
-    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
     width: 1600px;
     height: 80px;
     background-color: #EFC1C1;
 }
 
 #logo {
-    position: absolute;
     width: 256px;
     height: 80px;
     left: 58px;
     top: 0px;
+    margin: 0px auto;
 }
 
-.menu {
-    position: absolute;
+header>.menu {
+    position: inherit;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -45,6 +46,7 @@ header {
     left: 562px;
     height: 22px;
     padding-top: 29px;
+    margin: 0px auto;
 }
 
 p {
@@ -80,57 +82,46 @@ a {
 }
 
 #dateTime {
-    position: absolute;
-    white-space: nowrap;
     width: 140px;
     height: 22px;
     left: 1405px;
     padding-top: 29px;
-    margin: 0px;
+    margin: 0px auto;
 }
 
 #mainHand {
-    position: absolute;
+    position: relative;
     width: 1097.75px;
     height: 680px;
     left: 0px;
-    top: 80px;
+    top: 0px;
+    margin: 0px auto;
 }
 
-.tagLine {
-    position: absolute;
+#tagLine {
+    position: relative;
     width: 484px;
     height: 292px;
-    left: 997px;
-    top: 155px;
-}
-
-.tagLine>p {
-    position: absolute;
-    width: 137px;
-    height: 73px;
-    left: 0px;
-    top: 0px;
-    font-size: 60px;
-    margin: 0px;
+    right: 119px;
+    bottom: 300px;
+    margin: 0px auto;
 }
 
 #sendRequest {
-    position: absolute;
+    position: relative;
     width: 298px;
     height: 54px;
     left: 1180px;
-    top: 537px;
+    bottom: 216px;
+    margin: 0px auto;
     background: #884343;
     color: white;
     border-radius: 25px;
     border: 0px;
-    margin: 0px;
     font-family: 'Fredoka One';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
-    line-height: 29px;
 }
 
 #sendRequest:hover {
@@ -138,38 +129,53 @@ a {
 }
 
 .colorPickSection {
-    position: absolute;
+    position: inherit;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 131px;
     width: 1600px;
     height: 600px;
     left: 0px;
-    top: 780px;
+    top: 0px;
     background-color: white;
+    margin: 0px;
 }
 
 .colorPickSection>p {
-    position: absolute;
-    width: 530px;
-    height: 73px;
-    left: 623px;
+    position: relative;
+    width: 353px;
+    height: 48px;
     top: 50px;
     font-family: 'Fredoka One';
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
-    line-height: 73px;
     margin: 0px;
 }
 
-.palette {
-    position: absolute;
-    display: grid;
-    width: 400px;
+.colorPickSection>.colorPickFrame {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    width: 1124.44px;
     height: 340px;
-    left: 190px;
-    top: 156px;
-    grid-template-columns: repeat(5, 80px);
+    margin: 0px auto;
+}
+
+.colorPickFrame>.palette {
+    position: relative;
+    display: grid;
+    width: 304px;
+    height: 340px;
+    grid-template-columns: repeat(5, 60.8px);
     grid-template-rows: repeat(10, 34px);
     grid-gap: 0px 0px;
+    margin-right: 0px;
 }
 
 .palette>button {
@@ -190,102 +196,107 @@ a {
     filter: blur(4px);
 }
 
-.nailsBlock {
-    position: absolute;
+.colorPickFrame>.nailsBlock {
+    position: relative;
     width: 304.44px;
     height: 340px;
-    left: 1010px;
-    top: 156px;
+    left: 0px;
+    top: 0px;
+    margin: 0px auto;
 }
 
 .nailsBlock>#nailPhoto {
-    position: absolute;
+    position: relative;
     width: 304.44px;
     height: 340px;
     left: 0px;
     top: 0px;
 }
 
-.nailsBlock>#nail1 {
+.nailsBlock>.nailsColorBlock {
     position: absolute;
-    width: 58px;
-    height: 98px;
+    flex-wrap: nowrap;
+    width: 257px;
+    height: 212px;
     left: 25px;
-    top: 73px;
-    background-color: #482C2C;
-    border-radius: 14px 14px 24px 24px;
+    top: 10px;
+    margin: 0px auto;
 }
 
-.nailsBlock>#nail2 {
-    position: absolute;
+.nailsColorBlock>#nail1 {
+    position: relative;
+    width: 58px;
+    height: 98px;
+    left: 0px;
+    top: 63px;
+    background-color: #482C2C;
+    border-radius: 12px 12px 24px 24px;
+}
+
+.nailsColorBlock>#nail2 {
+    position: relative;
     width: 70px;
     height: 118px;
-    left: 124px;
-    top: 10px;
+    left: 99px;
+    bottom: 98px;
     background-color: #482C2C;
     border-radius: 16px 16px 35px 35px;
 }
 
-.nailsBlock>#nail3 {
-    position: absolute;
+.nailsColorBlock>#nail3 {
+    position: relative;
     width: 49px;
     height: 84px;
-    left: 233px;
-    top: 138px;
+    left: 208px;
+    bottom: 88px;
     background-color: #482C2C;
     border-radius: 12px 12px 25px 25px;
 }
 
-#tile {
-    position: absolute;
+.colorPickFrame>#tile {
+    position: relative;
     width: 298px;
     height: 170px;
-    left: 651px;
-    top: 241px;
     border-radius: 25px;
     background-color: #482C2C;
 }
 
-#leftArrow {
-    position: absolute;
+.colorPickFrame>.leftArrow {
+    position: relative;
     width: 37.5px;
-    left: 601.5px;
-    top: 315px;
 }
 
-#rightArrow {
-    position: absolute;
+.colorPickFrame>.rightArrow {
+    position: relative;
     width: 37.5px;
-    left: 961px;
-    top: 315px;
 }
 
 .advices {
-    position: absolute;
+    position: inherit;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 140px;
     width: 1600px;
     height: 1000px;
-    left: 0px;
-    top: 1380px;
     background: #FDD2D2;
+    margin: 0px auto;
 }
 
 #sectionTitle {
-    position: absolute;
+    position: relative;
     width: auto;
-    height: 73px;
-    left: 670px;
+    height: 48px;
     top: 50px;
     font-size: 40px;
-    line-height: 73px;
-    margin: 0px;
+    margin: 0px auto;
 }
 
 .adviceButtons {
-    position: absolute;
+    position: relative;
     width: 800px;
     height: 750px;
-    left: 400px;
-    top: 188px;
+    margin: 0px auto;
 }
 
 .adviceButtons>#backgroundCircle {
@@ -394,35 +405,37 @@ a {
 }
 
 .testimonials {
-    position: absolute;
+    position: inherit;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 113px;
     width: 1600px;
     height: 650px;
     left: 0px;
     top: 2380px;
+    margin: 0px auto;
 }
 
 .testimonials>p {
-    position: absolute;
+    position: relative;
     width: 244px;
     height: 48px;
-    left: 678px;
     top: 50px;
     font-size: 40px;
-    line-height: 48px;
     margin: 0px;
 }
 
 .testimonials>.cardsArea {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: row;
     gap: 20px;
     white-space: nowrap;
     width: 1380px;
     height: 315px;
-    left: 110px;
-    top: 173px;
-    margin: 0px;
+    margin: 0px auto;
 }
 
 .card {
@@ -478,11 +491,10 @@ a {
 }
 
 #leaveTestimonial {
-    position: absolute;
+    position: relative;
     width: 298px;
     height: 54px;
-    left: 651px;
-    top: 538px;
+    bottom: 50px;
     background: #FDD2D2;
     border-radius: 25px;
     font-family: 'Fredoka One';
@@ -506,23 +518,40 @@ a {
 }
 
 .footer {
-    position: absolute;
+    position: inherit;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
     width: 1600px;
     height: 367px;
-    left: 0px;
-    top: 3030px;
     background: #595959;
+    margin: 0px auto;
 }
 
-#social {
-    position: absolute;
+.footer>.firstLayout {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 389px;
+    width: 1464px;
+    height: 228px;
+    top: 30px;
+    margin: 0px auto;
+}
+
+.firstLayout>.social {
+    position: relative;
+    align-items: flex-start;
+    justify-content: flex-start;
     width: 181px;
     height: 154px;
-    left: 78px;
-    top: 30px;
 }
 
-#social>#titlePTag {
+.social>#titlePTag {
     position: absolute;
     width: 181px;
     height: 36.3px;
@@ -534,8 +563,11 @@ a {
     margin: 0px;
 }
 
-#social>#socialLinks {
-    position: absolute;
+.social>#socialLinks {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     width: 111px;
     height: 104px;
     left: 0px;
@@ -543,7 +575,7 @@ a {
 }
 
 #link {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: row;
     height: 26px;
@@ -551,34 +583,27 @@ a {
 }
 
 #link>p {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 16px;
     color: #FFFFFF;
     margin: 0px;
 }
 
-.lightLogo {
-    position: absolute;
-    width: 256px;
-    height: 80px;
-    left: 34px;
-    top: 260px;
-}
-
 .contactUS {
-    position: absolute;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
     width: 231px;
     height: 196px;
-    left: 684px;
-    top: 30px;
 }
 
 #contactUsTitle {
-    position: absolute;
+    position: relative;
     width: 157px;
     height: 36px;
-    left: 37px;
-    top: 0px;
     font-size: 30px;
     line-height: 36px;
     color: #FFFFFF;
@@ -586,38 +611,37 @@ a {
 }
 
 .contactInfo {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
     width: 231px;
-    height: 146px;
-    left: 0px;
-    top: 50px;
+    height: 110px;
     color: #FFFFFF;
 }
 
 #aTag {
-    font-size: 24px;
-    height: 29px;
+    font-size: 20px;
+    height: 20px;
     color: #FFFFFF;
     margin: 0px;
 }
 
 .contactInfo>p {
-    height: 29px;
-    font-size: 24px;
-    line-height: 29px;
+    height: 20px;
+    font-size: 20px;
     margin: 0px;
     color: #FFFFFF;
 }
 
 .backCall {
-    position: absolute;
+    position: relative;
+    align-items: flex-end;
+    justify-content: flex-start;
     width: 274px;
     height: 228px;
-    left: 1268px;
-    top: 30px;
 }
 
 #backCallTitle {
@@ -715,20 +739,35 @@ a {
     background: #633333;
 }
 
-.designer {
-    position: absolute;
+.logoAndDesign {
+    position: relative;
     display: flex;
-    align-items: center;
-    text-align: center;
-    width: 161px;
+    flex-direction: row;
+    gap: 1183px;
+    width: 1600px;
     height: 80px;
-    left: 1324px;
-    top: 277px;
+}
+
+.lightLogo {
+    position: relative;
+    align-items: flex-start;
+    justify-content: center;
+    width: 256px;
+    height: 80px;
+}
+
+.designer {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 161px;
+    height: 44px;
 }
 
 #designed {
     font-size: 16px;
-    line-height: 19px;
+    line-height: 16px;
     color: #FFFFFF;
     margin: 0px;
 }
