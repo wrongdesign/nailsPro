@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="./images/favicon.ico" rel="shortcut icon">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
@@ -26,85 +26,84 @@
                 <a href="#contactUs" id="lastItem">Contact us</a>
             </div>
             <p id="dateTime">Time</p>
-            <script src="./script.js"></script>
+            <script src="script.js"></script>
         </header>
         <img src="images/mainHand.png" alt="Nails demonstration" id="mainHand">
-        <div class="tagLine">
-            <a name="taglineSection"></a>
-            <p>Here</p>
-            <p style="width: 394px; left: 90px; top: 73px;">you can make</p>
-            <p style="width: 300px; left: 180px; top: 146px;">wonderful</p>
-            <p style="width: 137px; left: 270px; top: 219px;">nails</p>
-        </div>
-        <a href="#footer"><button id="sendRequest">Send request</button></a>
+        <a name="taglineSection" style="margin: 0px auto;"></a>
+        <img src="images/tagLine.png" alt="Tag text" id="tagLine">
+        <button id="sendRequest" onclick="document.location = '#footer'">Send request</button>
     </div>
+    <a name="colorPick" style="height: 0px;"></a>
     <div class="colorPickSection">
-        <a name="colorPick"></a>
         <p>Choose your color</p>
-        <div class="palette">
-            <button style="background-color: #482C2C;" onclick="changeColor(this)"></button>
-            <button style="background-color: #633F3F;" onclick="changeColor(this)"></button>
-            <button style="background-color: #835252;" onclick="changeColor(this)"></button>
-            <button style="background-color: #B87575;" onclick="changeColor(this)"></button>
-            <button style="background-color: #E59595;" onclick="changeColor(this)"></button>
-            <button style="background-color: #561212;" onclick="changeColor(this)"></button>
-            <button style="background-color: #771919;" onclick="changeColor(this)"></button>
-            <button style="background-color: #9B2828;" onclick="changeColor(this)"></button>
-            <button style="background-color: #CB2828;" onclick="changeColor(this)"></button>
-            <button style="background-color: #FF3333;" onclick="changeColor(this)"></button>
-            <button style="background-color: #522E14;" onclick="changeColor(this)"></button>
-            <button style="background-color: #81481F;" onclick="changeColor(this)"></button>
-            <button style="background-color: #A65D28;" onclick="changeColor(this)"></button>
-            <button style="background-color: #D17431;" onclick="changeColor(this)"></button>
-            <button style="background-color: #FF8832;" onclick="changeColor(this)"></button>
-            <button style="background-color: #632D06;" onclick="changeColor(this)"></button>
-            <button style="background-color: #8D4109;" onclick="changeColor(this)"></button>
-            <button style="background-color: #B95710;" onclick="changeColor(this)"></button>
-            <button style="background-color: #DE6812;" onclick="changeColor(this)"></button>
-            <button style="background-color: #FF740F;" onclick="changeColor(this)"></button>
-            <button style="background-color: #424431;" onclick="changeColor(this)"></button>
-            <button style="background-color: #63664A;" onclick="changeColor(this)"></button>
-            <button style="background-color: #838763;" onclick="changeColor(this)"></button>
-            <button style="background-color: #9A9E72;" onclick="changeColor(this)"></button>
-            <button style="background-color: #D4DA9F;" onclick="changeColor(this)"></button>
-            <button style="background-color: #464928;" onclick="changeColor(this)"></button>
-            <button style="background-color: #5F6338;" onclick="changeColor(this)"></button>
-            <button style="background-color: #8F9553;" onclick="changeColor(this)"></button>
-            <button style="background-color: #ABB263;" onclick="changeColor(this)"></button>
-            <button style="background-color: #C9D172;" onclick="changeColor(this)"></button>
-            <button style="background-color: #284349;" onclick="changeColor(this)"></button>
-            <button style="background-color: #3E6973;" onclick="changeColor(this)"></button>
-            <button style="background-color: #518793;" onclick="changeColor(this)"></button>
-            <button style="background-color: #58AFC2;" onclick="changeColor(this)"></button>
-            <button style="background-color: #77D1E4;" onclick="changeColor(this)"></button>
-            <button style="background-color: #164954;" onclick="changeColor(this)"></button>
-            <button style="background-color: #1F6675;" onclick="changeColor(this)"></button>
-            <button style="background-color: #3492A7;" onclick="changeColor(this)"></button>
-            <button style="background-color: #30B2CE;" onclick="changeColor(this)"></button>
-            <button style="background-color: #21CEF3;" onclick="changeColor(this)"></button>
-            <button style="background-color: #4E234C;" onclick="changeColor(this)"></button>
-            <button style="background-color: #743271;" onclick="changeColor(this)"></button>
-            <button style="background-color: #994395;" onclick="changeColor(this)"></button>
-            <button style="background-color: #B44BAF;" onclick="changeColor(this)"></button>
-            <button style="background-color: #E866E2;" onclick="changeColor(this)"></button>
-            <button style="background-color: #5E1349;" onclick="changeColor(this)"></button>
-            <button style="background-color: #7C1A61;" onclick="changeColor(this)"></button>
-            <button style="background-color: #A11279;" onclick="changeColor(this)"></button>
-            <button style="background-color: #C50A90;" onclick="changeColor(this)"></button>
-            <button style="background-color: #FC00B5;" onclick="changeColor(this)"></button>
-        </div>
-        <img src="images/arrow.png" alt="Arrow" id="leftArrow">
-        <div id="tile"></div>
-        <img src="images/arrow.png" alt="Arrow" id="rightArrow">
-        <div class="nailsBlock">
-            <img src="images/nailsForColor.png" alt="Hand with choosen color" id="nailPhoto">
-            <div id="nail1"></div>
-            <div id="nail2"></div>
-            <div id="nail3"></div>
+        <div class="colorPickFrame">
+            <div class="palette">
+                <button style="background-color: #482C2C;" onclick="changeColor(this)"></button>
+                <button style="background-color: #633F3F;" onclick="changeColor(this)"></button>
+                <button style="background-color: #835252;" onclick="changeColor(this)"></button>
+                <button style="background-color: #B87575;" onclick="changeColor(this)"></button>
+                <button style="background-color: #E59595;" onclick="changeColor(this)"></button>
+                <button style="background-color: #561212;" onclick="changeColor(this)"></button>
+                <button style="background-color: #771919;" onclick="changeColor(this)"></button>
+                <button style="background-color: #9B2828;" onclick="changeColor(this)"></button>
+                <button style="background-color: #CB2828;" onclick="changeColor(this)"></button>
+                <button style="background-color: #FF3333;" onclick="changeColor(this)"></button>
+                <button style="background-color: #522E14;" onclick="changeColor(this)"></button>
+                <button style="background-color: #81481F;" onclick="changeColor(this)"></button>
+                <button style="background-color: #A65D28;" onclick="changeColor(this)"></button>
+                <button style="background-color: #D17431;" onclick="changeColor(this)"></button>
+                <button style="background-color: #FF8832;" onclick="changeColor(this)"></button>
+                <button style="background-color: #632D06;" onclick="changeColor(this)"></button>
+                <button style="background-color: #8D4109;" onclick="changeColor(this)"></button>
+                <button style="background-color: #B95710;" onclick="changeColor(this)"></button>
+                <button style="background-color: #DE6812;" onclick="changeColor(this)"></button>
+                <button style="background-color: #FF740F;" onclick="changeColor(this)"></button>
+                <button style="background-color: #424431;" onclick="changeColor(this)"></button>
+                <button style="background-color: #63664A;" onclick="changeColor(this)"></button>
+                <button style="background-color: #838763;" onclick="changeColor(this)"></button>
+                <button style="background-color: #9A9E72;" onclick="changeColor(this)"></button>
+                <button style="background-color: #D4DA9F;" onclick="changeColor(this)"></button>
+                <button style="background-color: #464928;" onclick="changeColor(this)"></button>
+                <button style="background-color: #5F6338;" onclick="changeColor(this)"></button>
+                <button style="background-color: #8F9553;" onclick="changeColor(this)"></button>
+                <button style="background-color: #ABB263;" onclick="changeColor(this)"></button>
+                <button style="background-color: #C9D172;" onclick="changeColor(this)"></button>
+                <button style="background-color: #284349;" onclick="changeColor(this)"></button>
+                <button style="background-color: #3E6973;" onclick="changeColor(this)"></button>
+                <button style="background-color: #518793;" onclick="changeColor(this)"></button>
+                <button style="background-color: #58AFC2;" onclick="changeColor(this)"></button>
+                <button style="background-color: #77D1E4;" onclick="changeColor(this)"></button>
+                <button style="background-color: #164954;" onclick="changeColor(this)"></button>
+                <button style="background-color: #1F6675;" onclick="changeColor(this)"></button>
+                <button style="background-color: #3492A7;" onclick="changeColor(this)"></button>
+                <button style="background-color: #30B2CE;" onclick="changeColor(this)"></button>
+                <button style="background-color: #21CEF3;" onclick="changeColor(this)"></button>
+                <button style="background-color: #4E234C;" onclick="changeColor(this)"></button>
+                <button style="background-color: #743271;" onclick="changeColor(this)"></button>
+                <button style="background-color: #994395;" onclick="changeColor(this)"></button>
+                <button style="background-color: #B44BAF;" onclick="changeColor(this)"></button>
+                <button style="background-color: #E866E2;" onclick="changeColor(this)"></button>
+                <button style="background-color: #5E1349;" onclick="changeColor(this)"></button>
+                <button style="background-color: #7C1A61;" onclick="changeColor(this)"></button>
+                <button style="background-color: #A11279;" onclick="changeColor(this)"></button>
+                <button style="background-color: #C50A90;" onclick="changeColor(this)"></button>
+                <button style="background-color: #FC00B5;" onclick="changeColor(this)"></button>
+            </div>
+            <img src="images/arrow.png" alt="Arrow" class="leftArrow">
+            <div id="tile"></div>
+            <img src="images/arrow.png" alt="Arrow" class="rightArrow">
+            <div class="nailsBlock">
+                <img src="images/nailsForColor.png" alt="Hand with choosen color" id="nailPhoto">
+                <div class="nailsColorBlock">
+                    <div id="nail1"></div>
+                    <div id="nail2"></div>
+                    <div id="nail3"></div>
+                </div>
+            </div>
         </div>
     </div>
+    <a name="advices" style="height: 0px;"></a>
     <div class="advices">
-        <a name="advices"></a>
         <p id="sectionTitle">Some advices</p>
         <div class="adviceButtons">
             <div id="backgroundCircle">
@@ -113,11 +112,6 @@
             <button id="firstAdvice" onclick="changeAdvice(this)">
                 <div class="adviceEffects">
                     <p>One</p>
-                </div>
-            </button>
-            <button id="secondAdvice" onclick="changeAdvice(this)">
-                <div class="adviceEffects">
-                    <p>Four</p>
                 </div>
             </button>
             <button id="thirdAdvice" onclick="changeAdvice(this)">
@@ -130,10 +124,15 @@
                     <p>Three</p>
                 </div>
             </button>
+            <button id="secondAdvice" onclick="changeAdvice(this)">
+                <div class="adviceEffects">
+                    <p>Four</p>
+                </div>
+            </button>
         </div>
     </div>
+    <a name="testimonials" style="height: 0px;"></a>
     <div class="testimonials">
-        <a name="testimonials"></a>
         <p>Testomonials</p>
         <div class="cardsArea">
             <div class="card">
@@ -181,10 +180,11 @@
             <a href="#backCall"><button id="leaveTestimonial">Leave testimonial</button></a>
         </div>
     </div>
-    <div class="footer">
-        <footer>
-            <a name="footer"></a>
-            <div id="social">
+    <a name="footer" style="height: 0px;"></a>
+    <a name="contactUs" style="height: 0px;"></a>
+    <footer class="footer">
+        <div class="firstLayout">
+            <div class="social">
                 <p id="titlePTag">Subscribe us</p>
                 <div id="socialLinks">
                     <a href="https://www.facebook.com/profile.php?id=100008295191525" target="_blank">
@@ -214,7 +214,6 @@
                 </div>
             </div>
             <div class="contactUS">
-                <a name="contactUs"></a>
                 <p id="contactUsTitle">Contact us</p>
                 <div class="contactInfo">
                     <p><a href="mailto:nailspro@gmail.com" id="aTag">nailspro@gmail.com</a></p>
@@ -230,18 +229,23 @@
                     <div class="formFrame">
                         <input type="text" id="text" form="form" placeholder="Enter your name">
                         <input type="email" id="email" form="form" placeholder="Enter your email">
-                        <button form="form" type="submit" id="submitMail" onclick="sendEmail()">Send request</button>
+                        <button form="form" type="submit" id="submitMail" onclick="sendEmail()">Send
+                            request</button>
                     </div>
                 </form>
             </div>
+        </div>
+        <div class="logoAndDesign">
             <div class="lightLogo">
                 <img src="images/light-logo.png" alt="Light logo">
             </div>
             <div class="designer">
-                <a href="https://t.me/wrongdesign" target="_blank"><p id="designed">Designed by WrongDesign</p></a>
+                <a href="https://t.me/wrongdesign" target="_blank">
+                    <p id="designed">Designed by WrongDesign</p>
+                </a>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 </body>
 
 </html>
