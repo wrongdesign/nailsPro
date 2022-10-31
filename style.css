@@ -12,10 +12,24 @@ body {
     margin: 0px auto;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1599px) {
+@media screen and (max-width: 1599px) {
     body {
         width: 1000px;
         height: 2788px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    body {
+        width: 640px;
+        height: 2374px;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    body {
+        width: 640px;
+        height: 2374px;
     }
 }
 
@@ -28,10 +42,17 @@ body {
     margin: 0px auto;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1599px) {
+@media screen and (max-width: 1599px) {
     .mainSection {
         width: 1000px;
         height: 500px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .mainSection {
+        width: 640px;
+        height: 300px;
     }
 }
 
@@ -45,10 +66,17 @@ header {
     justify-content: center;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1599px) {
+@media screen and (max-width: 1599px) {
     header {
         width: 1000px;
         height: 80px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    header {
+        width: 640px;
+        height: 40px;
     }
 }
 
@@ -60,10 +88,17 @@ header {
     margin: 0px auto;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1599px) {
+@media screen and (max-width: 1599px) {
     #logo {
         width: 200px;
         height: 62.5px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    #logo {
+        width: 100px;
+        height: 31.25px;
     }
 }
 
@@ -106,7 +141,7 @@ a {
     color: #884343;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1599px) {
+@media screen and (max-width: 1599px) {
     header>.menu {
         width: 409px;
         height: 19px;
@@ -124,16 +159,41 @@ a {
     }
 }
 
+@media screen and (max-width: 999px) {
+    header>.menu {
+        width: 318px;
+        height: 15px;
+        gap: 10px;
+    }
+
+    p {
+        font-size: 12px;
+        height: 15px;
+    }
+
+    a {
+        font-size: 12px;
+        height: 15px;
+    }
+}
+
 #dateTime {
     width: 145px;
     height: 22px;
     margin: 0px auto;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1599px) {
+@media screen and (max-width: 1599px) {
     #dateTime {
         width: 125px;
         height: 19px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    #dateTime {
+        width: 100px;
+        height: 15px;
     }
 }
 
@@ -182,7 +242,7 @@ a {
     background: #633333;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1599px) {
+@media screen and (max-width: 1599px) {
     .mainSlider {
         width: 1000px;
         height: 420px;
@@ -209,6 +269,33 @@ a {
     }
 }
 
+@media screen and (max-width: 999px) {
+    .mainSlider {
+        width: 640px;
+        height: 260px;
+    }
+
+    #mainHand {
+        width: 400px;
+        height: 248.06px;
+    }
+
+    #tagLine {
+        width: 216px;
+        height: 130.31px;
+        left: -53px;
+        bottom: 92px;
+    }
+
+    #sendRequest {
+        width: 200px;
+        height: 34px;
+        left: 400px;
+        bottom: 69px;
+        font-size: 14px;
+    }
+}
+
 .colorPickSection {
     position: inherit;
     display: flex;
@@ -223,11 +310,19 @@ a {
     margin: 0px;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1599px) {
+@media screen and (max-width: 1599px) {
     .colorPickSection {
         width: 1000px;
         height: 400px;
         gap: 40px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .colorPickSection {
+        width: 640px;
+        height: 240px;
+        gap: 34px;
     }
 }
 
@@ -240,12 +335,21 @@ a {
     margin: 0px;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1599px) {
+@media screen and (max-width: 1599px) {
     .colorPickSection>p {
         width: 230px;
         height: 31px;
         top: 30px;
         font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .colorPickSection>p {
+        width: 159px;
+        height: 22px;
+        top: 18px;
+        font-size: 18px;
     }
 }
 
@@ -272,7 +376,7 @@ a {
     margin-right: 0px;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1599px) {
+@media screen and (max-width: 1599px) {
     .colorPickSection>.colorPickFrame {
         width: 924px;
         height: 300px;
@@ -285,6 +389,22 @@ a {
         height: 300px;
         grid-template-columns: repeat(5, 60px);
         grid-template-rows: repeat(10, 30px);
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .colorPickSection>.colorPickFrame {
+        width: 535.31px;
+        height: 150px;
+        padding-right: 16px;
+        gap: 14px;
+    }
+
+    .colorPickFrame>.palette {
+        width: 150px;
+        height: 150px;
+        grid-template-columns: repeat(5, 30px);
+        grid-template-rows: repeat(10, 15px);
     }
 }
 
@@ -323,7 +443,7 @@ a {
     top: 0px;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1599px) {
+@media screen and (max-width: 1599px) {
     .colorPickFrame>.nailsBlock {
         width: 269px;
         height: 300px;
@@ -332,6 +452,18 @@ a {
     .nailsBlock>#nailPhoto {
         width: 268.62px;
         height: 300px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .colorPickFrame>.nailsBlock {
+        width: 134.31px;
+        height: 150px;
+    }
+
+    .nailsBlock>#nailPhoto {
+        width: 134.31px;
+        height: 150px;
     }
 }
 
@@ -375,7 +507,7 @@ a {
     border-radius: 12px 12px 25px 25px;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1599px) {
+@media screen and (max-width: 1599px) {
     .nailsBlock>.nailsColorBlock {
         width: 228px;
         height: 189px;
@@ -405,6 +537,36 @@ a {
     }
 }
 
+@media screen and (max-width: 999px) {
+    .nailsBlock>.nailsColorBlock {
+        width: 115px;
+        height: 94px;
+        left: 10px;
+        top: 4px;
+    }
+
+    .nailsColorBlock>#nail1 {
+        width: 27px;
+        height: 44px;
+        left: 0px;
+        top: 28px;
+    }
+
+    .nailsColorBlock>#nail2 {
+        width: 32px;
+        height: 53px;
+        left: 44px;
+        bottom: 44px;
+    }
+
+    .nailsColorBlock>#nail3 {
+        width: 23px;
+        height: 37px;
+        left: 92px;
+        bottom: 40px;
+    }
+}
+
 .colorPickFrame>#tile {
     position: relative;
     width: 200px;
@@ -421,6 +583,21 @@ a {
 .colorPickFrame>.rightArrow {
     position: relative;
     width: 37.5px;
+}
+
+@media screen and (max-width: 999px) {
+    .colorPickFrame>#tile {
+        width: 145px;
+        height: 75px;
+    }
+
+    .colorPickFrame>.leftArrow {
+        width: 25px;
+    }
+
+    .colorPickFrame>.rightArrow {
+        width: 25px;
+    }
 }
 
 .advices {
@@ -444,7 +621,7 @@ a {
     margin: 0px auto;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1599px) {
+@media screen and (max-width: 1599px) {
     .advices {
         width: 1000px;
         height: 871px;
@@ -455,6 +632,20 @@ a {
         top: 30px;
         font-size: 26px;
         height: 31px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .advices {
+        width: 640px;
+        height: 632px;
+        gap: 36px;
+    }
+
+    #sectionTitle {
+        top: 18px;
+        font-size: 18px;
+        height: 21.78px;
     }
 }
 
@@ -496,9 +687,36 @@ a {
     margin: 0px;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1599px) {
+@media screen and (max-width: 1599px) {
     .adviceEffects>p {
         font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .adviceButtons {
+        width: 525px;
+        height: 556.25px;
+    }
+
+    .adviceButtons>#backgroundCircle {
+        width: 400px;
+        height: 400px;
+        left: 63px;
+        top: 78px;
+        border-radius: 200px;
+    }
+
+    .adviceEffects {
+        width: 125px;
+        height: 156.25px;
+        border-radius: 200px;
+    }
+
+    .adviceEffects>p {
+        line-height: 156.25px;
+        font-size: 14px;
+        vertical-align: middle;
     }
 }
 
@@ -576,6 +794,47 @@ a {
     margin: 0px;
 }
 
+@media screen and (max-width: 999px) {
+    #firstAdvice {
+        width: 125px;
+        height: 156.25px;
+        left: 200px;
+        background-image: url(images/adviceOne125x156.jpg);
+    }
+
+    #secondAdvice {
+        width: 125px;
+        height: 156.25px;
+        top: 200px;
+        background-image: url(images/adviceTwo125x156.jpg);
+    }
+
+    #thirdAdvice {
+        width: 125px;
+        height: 156.25px;
+        left: 400px;
+        top: 200px;
+        background-image: url(images/adviceThree125x156.jpg);
+    }
+
+    #fourthAdvice {
+        width: 125px;
+        height: 156.25px;
+        left: 200px;
+        top: 400px;
+        background-image: url(images/adviceFour125x156.jpg);
+    }
+
+    #backgroundCircle>#adviceText {
+        width: 260px;
+        height: 125px;
+        left: 70px;
+        top: 137px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
 .testimonials {
     position: inherit;
     display: flex;
@@ -597,7 +856,7 @@ a {
     margin: 0px;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1599px) {
+@media screen and (max-width: 1599px) {
     .testimonials {
         width: 1000px;
         height: 650px;
@@ -612,6 +871,21 @@ a {
     }
 }
 
+@media screen and (max-width: 999px) {
+    .testimonials {
+        width: 640px;
+        height: 854px;
+        gap: 36px;
+    }
+
+    .testimonials>p {
+        top: 18px;
+        width: 110px;
+        height: 22px;
+        font-size: 18px;
+    }
+}
+
 .testimonials>.cardsArea {
     position: relative;
     display: flex;
@@ -623,12 +897,23 @@ a {
     margin: 0px auto;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1599px) {
+@media screen and (max-width: 1599px) {
     .testimonials>.cardsArea {
         flex-wrap: wrap;
         width: 600px;
         height: 430px;
         gap: 30px 40px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .testimonials>.cardsArea {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 560px;
+        height: 714px;
+        gap: 18px;
     }
 }
 
@@ -684,7 +969,7 @@ a {
     text-align: justify;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1599px) {
+@media screen and (max-width: 1599px) {
     .card {
         width: 280px;
         height: 200px;
@@ -710,7 +995,7 @@ a {
         width: 125.58px;
         height: 9.52px;
         left: 85.7px;
-        top: 31.75px;
+        top: 35px;
         font-size: 10px;
     }
 
@@ -719,6 +1004,43 @@ a {
         height: 107px;
         left: 21px;
         top: 58px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .card {
+        width: 400px;
+        height: 165px;
+        border-radius: 60px;
+    }
+
+    .card>img {
+        width: 40px;
+        height: 40px;
+        left: 30px;
+        top: 10px;
+    }
+
+    .card>p {
+        width: 273px;
+        height: 20px;
+        left: 80px;
+        top: 10px;
+        font-size: 16px;
+    }
+
+    .card>#info {
+        left: 80px;
+        top: 31.75px;
+        font-size: 10px;
+    }
+
+    .card>#description {
+        width: 350px;
+        height: 82px;
+        left: 25px;
+        top: 60px;
         font-size: 12px;
     }
 }
@@ -738,13 +1060,23 @@ a {
     border: none;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1599px) {
+@media screen and (max-width: 1599px) {
     #leaveTestimonial {
         width: 244px;
         height: 46px;
         font-size: 18px;
         line-height: 22px;
         top: -30px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    #leaveTestimonial {
+        width: 200px;
+        height: 34px;
+        font-size: 14px;
+        padding: 0px;
+        top: -18px;
     }
 }
 
@@ -794,7 +1126,7 @@ a {
     height: 154px;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1599px) {
+@media screen and (max-width: 1599px) {
     .footer {
         width: 1000px;
         height: 367px;
@@ -806,6 +1138,28 @@ a {
         height: 228px;
         top: 30px;
         gap: 179px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .footer {
+        width: 640px;
+        height: 348px;
+        gap: 60px;
+    }
+
+    .footer>.firstLayout {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 558px;
+        height: 234px;
+        top: 28px;
+        gap: 29px 226px;
+    }
+
+    .firstLayout>.social {
+        width: 145px;
+        height: 98px;
     }
 }
 
@@ -836,16 +1190,53 @@ a {
     position: absolute;
     display: flex;
     flex-direction: row;
-    height: 26px;
     gap: 14px;
 }
 
 #link>p {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 16px;
     color: #FFFFFF;
     margin: 0px;
 }
+
+@media screen and (max-width: 999px) {
+    .social>#titlePTag {
+        width: 121px;
+        height: 20px;
+        left: 0px;
+        top: 0px;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .social>#socialLinks {
+        gap: 4px;
+        width: 96px;
+        height: 68px;
+        left: 0px;
+        top: 30px;
+    }
+
+    #link {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        height: 14px;
+        gap: 14px;
+    }
+
+    #link>img {
+        width: 14px;
+        height: 14px;
+    }
+
+    #link>p {
+        font-size: 14px;
+        line-height: 14px;
+    }
+}
+
 
 .contactUS {
     position: relative;
@@ -881,17 +1272,48 @@ a {
 }
 
 #aTag {
-    font-size: 20px;
-    height: 20px;
+    font-size: 16px;
+    height: 16px;
     color: #FFFFFF;
     margin: 0px;
 }
 
 .contactInfo>p {
-    height: 20px;
-    font-size: 20px;
+    height: 16px;
+    font-size: 16px;
     margin: 0px;
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 999px) {
+    .contactUS {
+        gap: 6px;
+        width: 135px;
+        height: 92px;
+    }
+
+    #contactUsTitle {
+        width: 105px;
+        height: 20px;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .contactInfo {
+        gap: 4px;
+        width: 135px;
+        height: 74px;
+    }
+
+    #aTag {
+        font-size: 14px;
+        height: 14px;
+    }
+
+    .contactInfo>p {
+        height: 14px;
+        font-size: 14px;
+    }
 }
 
 .backCall {
@@ -914,7 +1336,7 @@ a {
     margin: 0px;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1599px) {
+@media screen and (max-width: 1599px) {
     .backCall {
         width: 181px;
         height: 228px;
@@ -925,6 +1347,23 @@ a {
         height: 36px;
         left: 26px;
         top: 0px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .backCall {
+        width: 181px;
+        height: 157px;
+        gap: 10px;
+    }
+
+    #backCallTitle {
+        width: 86px;
+        height: 20px;
+        left: 48px;
+        top: 0px;
+        font-size: 20px;
+        line-height: 20px;
     }
 }
 
@@ -947,13 +1386,27 @@ a {
     top: 0px;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1599px) {
+@media screen and (max-width: 1599px) {
     #form {
         width: 181px;
     }
 
     .formFrame {
         width: 181px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    #form {
+        width: 181px;
+        height: 129px;
+        top: 29px;
+    }
+
+    .formFrame {
+        width: 181px;
+        height: 129px;
+        gap: 10px;
     }
 }
 
@@ -972,11 +1425,21 @@ a {
     text-align: center;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1599px) {
+@media screen and (max-width: 1599px) {
     #text {
         width: 181px;
         font-size: 12px;
         line-height: 15px;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    #text {
+        width: 181px;
+        height: 36px;
+        font-size: 12px;
+        padding: 0px;
     }
 }
 
@@ -999,11 +1462,20 @@ a {
     text-align: center;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1599px) {
+@media screen and (max-width: 1599px) {
     #email {
         width: 181px;
         font-size: 12px;
-        line-height: 15px;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    #email {
+        width: 181px;
+        height: 36px;
+        font-size: 12px;
+        padding: 0px;
     }
 }
 
@@ -1025,11 +1497,20 @@ a {
     border: none;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1599px) {
+@media screen and (max-width: 1599px) {
     #submitMail {
         width: 181px;
         font-size: 14px;
         line-height: 17px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    #submitMail {
+        width: 181px;
+        height: 36px;
+        font-size: 12px;
+        line-height: 12px;
     }
 }
 
@@ -1078,7 +1559,7 @@ a {
     margin: 0px;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1599px) {
+@media screen and (max-width: 1599px) {
     .logoAndDesign {
         width: 1000px;
         height: 63px;
@@ -1099,5 +1580,34 @@ a {
         width: 161px;
         height: 63px;
         align-items: center;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .logoAndDesign {
+        width: 556px;
+        height: 31.25px;
+        gap: 362px;
+    }
+
+    .lightLogo {
+        width: 100px;
+        height: 31.25px;
+    }
+
+    #light {
+        width: 100px;
+        height: 31.25px;
+    }
+
+    .designer {
+        width: 94px;
+        height: 30px;
+        align-items: center;
+    }
+
+    #designed {
+        font-size: 12px;
+        line-height: 12px;
     }
 }
