@@ -472,6 +472,7 @@ a {
         top: 18px;
         font-size: 18px;
         text-align: center;
+        white-space: nowrap;
     }
 }
 
@@ -482,6 +483,7 @@ a {
         top: 14px;
         font-size: 14px;
         text-align: center;
+        white-space: nowrap;
     }
 }
 
@@ -1601,6 +1603,7 @@ a {
         top: 0px;
         font-size: 14px;
         line-height: 14px;
+        white-space: nowrap;
     }
 
     .social>#socialLinks {
@@ -1725,6 +1728,7 @@ a {
         height: 14px;
         font-size: 14px;
         line-height: 14px;
+        white-space: nowrap;
     }
 
     .contactInfo {
