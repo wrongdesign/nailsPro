@@ -21,14 +21,35 @@
             <div class="menu">
                 <a href="#taglineSection">About</a>
                 <a href="#colorPick">Color pick</a>
-                <a href="#advices">Advices</a>
+                <a href="#advices">Advice</a>
                 <a href="#testimonials">Testimonials</a>
                 <a href="#contactUs">Contact us</a>
             </div>
             <p id="dateTime">Time</p>
-            <button class="burgerMenu"></button>
+            <div class="burgerMenu" id="burgerButton" onclick="showMenu()">
+                <span id="line1"></span>
+                <span id="line2"></span>
+                <span id="line3"></span>
+            </div>
             <script src="script.js"></script>
         </header>
+        <div class="burgerMenuFrame" id="burgerMenuFrameId">
+            <div class="menuHeader">
+                <img src="images/burgerLogo.png" alt="logo" id="logo">
+                <img src="images/closeCross.png" alt="close button" onclick="closeMenu()" id="closeCross">
+            </div>
+            <div class="menuList">
+                <a href="#taglineSection" onclick="closeMenu()">About</a>
+                <div id="separator"></div>
+                <a href="#colorPick" onclick="closeMenu()">Color pick</a>
+                <div id="separator"></div>
+                <a href="#advices" onclick="closeMenu()">Advice</a>
+                <div id="separator"></div>
+                <a href="#testimonials" onclick="closeMenu()">Testimonials</a>
+                <div id="separator"></div>
+                <a href="#contactUs" onclick="closeMenu()">Contact us</a>
+            </div>
+        </div>
         <a name="taglineSection" style="width: 1600px; height: 0px; margin: 0px auto;"></a>
         <div class="mainSlider">
             <img src="images/mainHand.png" alt="Nails demonstration" id="mainHand">
@@ -108,7 +129,7 @@
     </div>
     <a name="advices" style="height: 0px;"></a>
     <div class="advices">
-        <p id="sectionTitle">Some advices</p>
+        <p id="sectionTitle">Some advice</p>
         <div class="adviceButtons">
             <div id="backgroundCircle">
                 <p id="adviceText"></p>
