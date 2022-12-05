@@ -201,7 +201,24 @@
                     helped a lot, I will recommend it to all my friends.</p>
             </div>
         </div>
-        <button id="leaveTestimonial" onclick="document.location = '#backCall'">Leave testimonial</button>
+        <button id="leaveTestimonial" onclick="showTestimonialArea()">Leave testimonial</button>
+        <div class="leaveTestimonialFrame" id="testimonialArea">
+            <div class="testimonialForm">
+                <div class="closeButtonFrame">
+                    <img src="images/closeCrossBlack.png" class="closeTestimonial" alt="close form" id="closeForm"
+                        onclick="closeTestimonialArea()">
+                </div>
+                <div class="testimonialFormFrame">
+                    <p id="testimonialSend">Testimonial</p>
+                    <form id="testimonialForm">
+                        <input type="text" id="testiText" form="testimonialForm" placeholder="Enter your name">
+                        <input type="email" id="testiEmail" form="testimonialForm" placeholder="Enter your email">
+                        <textarea type="text" id="testiDescription" form="testimonialForm" placeholder="Start wirte your testimonial"></textarea>
+                        <button id="leaveTestimonial" style="top: 0px;" onclick="sendtestimonial()">Send testimonial</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
     <a name="footer" style="height: 0px;"></a>
     <a name="contactUs" style="height: 0px;"></a>
