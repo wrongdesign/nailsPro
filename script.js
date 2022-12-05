@@ -132,6 +132,24 @@ function closeMenu() {
     pop.style.cssText = "display: none; overflow: hidden;";
 }
 
+function showTestimonialArea() {
+    let testimonial = document.getElementById("testimonialArea");
+
+    testimonial.style.cssText = "position: fixed; display: flex; flex-direction: column; flex-wrap: nowrap; align-items: center; justify-content: center;";
+}
+
+function closeTestimonialArea() {
+    let testimonial = document.getElementById("testimonialArea");
+    testimonial.style.cssText = "display: none; overflow: hidden;";
+    document.getElementById("testiText").value = "";
+    document.getElementById("testiEmail").value = "";
+    document.getElementById("testiDescription").value = "";
+}
+
+function sendtestimonial() {
+    console.log("Testimonial sending");
+}
+
 function sendEmail() {
     console.log("Sending");
 }
