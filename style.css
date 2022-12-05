@@ -228,7 +228,7 @@ a {
 
 @media screen and (max-width: 1599px) {
     #dateTime {
-        width: 125px;
+        width: 130px;
         height: 19px;
     }
 }
@@ -1497,6 +1497,275 @@ a {
 
 #leaveTestimonial:focus {
     background-color: #DB8484;
+}
+
+.leaveTestimonialFrame {
+    display: none;
+    overflow: hidden;
+    background: rgba(100, 99, 99, 0.5);
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 9999;
+}
+
+#testimonialSend {
+    height: 40px;
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0px;
+}
+
+@media screen and (max-width: 1599px) {
+    #testimonialSend {
+        height: 26px;
+        font-size: 26px;
+        line-height: 26px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    #testimonialSend {
+        height: 20px;
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    #testimonialSend {
+        height: 14px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+}
+
+.testimonialForm {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0px;
+    width: 800px;
+    height: 430px;
+    background: #FFFFFF;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 9999;
+}
+
+@media screen and (max-width: 1599px) {
+    .testimonialForm {
+        height: 416px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .testimonialForm {
+        width: 550px;
+        height: 562px;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .testimonialForm {
+        width: 267px;
+        height: 310px;
+    }
+}
+
+.testimonialForm>.closeButtonFrame {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+
+@media screen and (max-width: 639px) {
+    .testimonialForm>.closeButtonFrame {
+        height: 20px;
+    }
+
+    #closeForm {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.testimonialForm>.testimonialFormFrame {
+    width: 597px;
+    height: 352px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1599px) {
+    .testimonialForm>.testimonialFormFrame {
+        height: 338px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .testimonialForm>.testimonialFormFrame {
+        gap: 20px;
+        width: 405px;
+        height: 496px;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .testimonialForm>.testimonialFormFrame {
+        gap: 10px;
+        width: 246px;
+        height: 280px;
+    }
+}
+
+.testimonialFormFrame>#testimonialForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    width: 597px;
+    height: 297px;
+}
+
+@media screen and (max-width: 999px) {
+    .testimonialFormFrame>#testimonialForm {
+        gap: 20px;
+        width: 405px;
+        height: 456px;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .testimonialFormFrame>#testimonialForm {
+        gap: 10px;
+        width: 246px;
+        height: 256px;
+    }
+}
+
+#testimonialForm>#testiText {
+    width: 596px;
+    height: 50px;
+    color: #000000;
+    font-family: 'Fredoka One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    background: #FFFFFF;
+    border-radius: 25px;
+    border: 1px solid #000000;
+    text-align: left;
+    text-indent: 18px;
+}
+
+#testiText::-webkit-input-placeholder {
+    color: #000000;
+}
+
+#testimonialForm>#testiEmail {
+    width: 596px;
+    height: 50px;
+    color: #000000;
+    font-family: 'Fredoka One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    background: #FFFFFF;
+    border-radius: 25px;
+    border: 1px solid #000000;
+    text-align: left;
+    text-indent: 18px;
+}
+
+#testiEmail::-webkit-input-placeholder {
+    color: #000000;
+}
+
+#testimonialForm>#testiDescription {
+    width: 596px;
+    height: 98px;
+    color: #000000;
+    font-family: 'Fredoka One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    background: #FFFFFF;
+    border-radius: 25px;
+    border: 1px solid #000000;
+    text-align: left;
+    text-indent: 18px;
+    white-space: wrap;
+    padding-top: 11px;
+    resize: none;
+}
+
+#testiDescription::-webkit-input-placeholder {
+    color: #000000;
+}
+
+@media screen and (max-width: 999px) {
+    #testimonialForm>#testiText {
+        width: 405px;
+        font-size: 14px;
+        line-height: 17px;
+        text-indent: 12px;
+    }
+
+    #testimonialForm>#testiEmail {
+        width: 405px;
+        font-size: 14px;
+        line-height: 17px;
+        text-indent: 12px;
+    }
+
+    #testimonialForm>#testiDescription {
+        width: 405px;
+        height: 242px;
+        font-size: 14px;
+        line-height: 17px;
+        text-indent: 12px;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    #testimonialForm>#testiText {
+        width: 246px;
+        height: 26px;
+        font-size: 8px;
+        line-height: 8px;
+        text-indent: 8px;
+    }
+
+    #testimonialForm>#testiEmail {
+        width: 246px;
+        height: 26px;
+        font-size: 8px;
+        line-height: 8px;
+        text-indent: 8px;
+    }
+
+    #testimonialForm>#testiDescription {
+        width: 246px;
+        height: 148px;
+        font-size: 8px;
+        line-height: 8px;
+        text-indent: 8px;
+    }
+}
+
+.closeTestimonial {
+    width: 45px;
+    height: 45px;
 }
 
 .footer {
